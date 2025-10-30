@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>    <title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Jomhuria&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">  
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav data-aos="fade-down">
+        <span>PORTFOLIO</span>
+            <ul>
+                <li id="nav-home"><a href="#home">HOME</a></li>
+                <li id="nav-about"><a href="#about">ABOUT</a></li>
+                <li id="nav-skills"><a href="#skills">SKILLS</a></li>
+                <li id="nav-contact"><a href="#contact">CONTACT</a></li>
+            </ul>
+    </nav>
+
+    <!-- ===== PROFILE SECTION ===== -->
+    <div id="home" class="container">
+        <div class="profile" data-aos="fade-right">
+            <img src="profile.png" alt="image 1">
+        </div>
+    <div class="info" data-aos="fade-left">
+        <p>
+            <h3>Hii</h3>
+            <h1>I'm <span>Deepayan Saha</span></h1>
+            <h2>A Full-Stack Developer</h2>
+        </p>
+        <button id="btn">Download CV</button>
+    </div>
+    </div>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <h1 id="about">ABOUT ME</h1>
+
+  <div class="about">
+    <div class="left" data-aos="fade-up">
+      <p>Hi, I'm Deepayan Saha — a passionate and curious tech enthusiast currently pursuing my BCA. I enjoy building clean, functional websites and exploring new technologies that bring ideas to life. Whether it's front-end design, backend logic, or solving real-world problems through code, I strive to create impactful digital experiences. Welcome to my portfolio — take a look around and feel free to connect!</p>
+    </div>
+    <div class="right" data-aos="fade-up">
+      <img src="profile2.png" alt="image2">
+    </div>
+  </div>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <h1 id="skills">MY SKILLS</h1>
+
+  <div class="skills">
+    <div class="skill-card" data-aos="zoom-in">
+      <img src="html.png" alt="HTML">
+      <p><strong>HTML</strong>Used to structure content on the web like headings, paragraphs, images, and links.</p>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+      <img src="css.png" alt="CSS">
+      <p><strong>CSS</strong>Used for designing and styling web pages — controls layout, colors, fonts, and responsiveness.</p>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+      <img src="javascript.png" alt="JavaScript">
+      <p><strong>JavaScript</strong>Adds interactivity to websites like form validation, animations, and dynamic content.</p>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+      <img src="c++.png" alt="C++">
+      <p><strong>C++</strong>A fast and powerful language used in game development, competitive coding, and software engineering.</p>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+      <img src="python.png" alt="Python">
+      <p><strong>Python</strong>Beginner-friendly language widely used for web apps, AI, automation, and data science.</p>
+    </div>
+
+    <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+      <img src="java.png" alt="Java">
+      <p><strong>Java</strong>Object-oriented and platform-independent language used in Android apps, backend systems, and enterprise applications.</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <!-- ===== CONTACT SECTION ===== -->
+<h1 id="contact">CONTACT ME</h1>
+
+<div class="contact-section" data-aos="fade-up">
+  <form class="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div class="contact-info">
+    <p><strong>Email:</strong> deepayansaha76@email.com</p>
+    <p><strong>Phone:</strong> +91-9395668785</p>
+    <p><strong>Location:</strong> Assam, India</p>
+  </div>
+</div>
+
+  </div>
+
+  <!-- ===== JS FILES ===== -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

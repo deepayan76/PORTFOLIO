@@ -1,0 +1,407 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #000000;
+  color: #fff;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+
+nav span {
+  font-family: 'Jomhuria', cursive;
+  font-size: 7rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  color: #ffffff;
+}
+
+nav ul li a:hover,
+nav ul li.active a {
+  color: #FF0000;
+}
+
+nav ul li.active a {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* ===== ABOUT SECTION ===== */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 160px 60px 60px;
+  flex-wrap: wrap;
+  gap: 110px;
+}
+
+.profile img {
+  width: 70vmin;
+  height: 70vmin;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 40px red;
+}
+
+.info {
+  font-family: 'Rajdhani', sans-serif;
+  max-width: 500px;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 1.5rem;
+}
+
+.info span {
+  color: #FF0000;
+}
+
+/* ===== DOWNLOAD BUTTON ===== */
+#btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vmin;
+  width: 20vmin;
+  border: none;
+  border-radius: 20vh;
+  cursor: pointer;
+  background-color: #000000;
+  color: #FF0000;
+  margin-top: 20px;
+  box-shadow: 1px 1px 20px #FF0000;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  gap: 10px;
+}
+
+#btn:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 25px #FF0000;
+}
+
+#about {
+  margin-top: 25vh;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #FF0000;
+  font-family: 'Rajdhani', sans-serif;
+  gap: 110px;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 40px;
+  flex-wrap: wrap;
+  gap: 110px;
+}
+
+.left p {
+  max-width: 600px;
+  font-weight: 600;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.right img {
+  width: 70vmin;
+  height: 70vmin;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 40px #FF0000;
+}
+
+/* ===== SKILLS SECTION UPDATED ===== */
+#skills {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #FF0000;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #000000;
+}
+
+.skill-card {
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+.skill-card img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.2));
+  border-radius: 10px;
+}
+
+.skill-card p {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.skill-card strong {
+  color: #FF0000;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact {
+  text-align: center;
+  margin: 5rem 0 2rem;
+  font-size: 2.5rem;
+  font-family: 'Rajdhani', sans-serif;
+  color: #FF0000;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+.contact-form button {
+  background-color: #FF0000;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #FF0000;
+}
+
+.contact-info {
+  flex: 1;
+  color: #ccc;
+  font-size: 1.1rem;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  nav span {
+    font-size: 3.2rem;
+  }
+
+  nav ul {
+    gap: 40px;
+  }
+
+  nav ul li {
+    font-size: 1.2rem;
+  }
+
+  .about {
+    padding: 140px 40px 40px;
+    gap: 60px;
+  }
+
+  .profile img,
+  .right img {
+    width: 60vmin;
+    height: 60vmin;
+  }
+
+  .info {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+
+  nav span {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    padding: 140px 20px 40px;
+    gap: 40px;
+  }
+
+  .profile img,
+  .right img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .info {
+    font-size: 1.1rem;
+    max-width: 90%;
+  }
+
+  #btn {
+    width: 40vmin;
+    height: 12vmin;
+    margin-top: 16px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav span {
+    font-size: 2.3rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  .profile img,
+  .right img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .info {
+    font-size: 1rem;
+  }
+
+  #btn {
+    width: 30vmin;
+    height: 12vmin;
+    font-size: 0.95rem;
+    margin-top: 16px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  nav span {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .profile img,
+  .right img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info {
+    font-size: 0.9rem;
+  }
+
+  #btn {
+    width: 40vmin;
+    height: 12vmin;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    gap: 10px;
+  }
+}
