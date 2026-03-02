@@ -1,5 +1,9 @@
 # 🚀 Deepayan Saha — Personal Portfolio
 
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-deepayan76.github.io%2FPORTFOLIO-7c3aed?style=for-the-badge)](https://deepayan76.github.io/PORTFOLIO/)
+
+> **🔗 [View Live Site → https://deepayan76.github.io/PORTFOLIO/](https://deepayan76.github.io/PORTFOLIO/)**
+
 A fully custom, interactive personal portfolio website built with **HTML**, **CSS**, and **vanilla JavaScript** — no frameworks, no build tools, just pure web.
 
 ---
